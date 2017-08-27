@@ -2,3 +2,7 @@
 {% for page in pages %}
     <a href="{{ path('_page_show',{slug:page.slug}) }}">{{ page.title }}</a><br>
 {% endfor %}
+
+{% if pages|length == 0 %}
+    Aucune page trouvée
+{% endif %}
