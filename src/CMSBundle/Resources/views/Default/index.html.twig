@@ -1,0 +1,4 @@
+
+{% for page in pages %}
+    <a href="{{ path('_page_show',{slug:page.slug}) }}">{{ page.title }}</a><br>
+{% endfor %}
